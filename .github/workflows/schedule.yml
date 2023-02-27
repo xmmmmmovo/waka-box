@@ -2,9 +2,7 @@ name: Update gist with WakaTime stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
-  # Manual triggers with workflow_dispatch
-  workflow_dispatch:
+    - cron: "0 23 * * *"
 jobs:
   update-gist:
     runs-on: ubuntu-latest
